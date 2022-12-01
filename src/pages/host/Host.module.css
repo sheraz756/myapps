@@ -1,0 +1,29 @@
+.head{
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  position: relative;
+  top: -70px;
+}
+.email{
+  height: 30px;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  top: -50px;
+}
+.password{
+  height: 30px;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  top: -30px;
+}
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}

@@ -1,0 +1,66 @@
+.App{
+	margin-left: 1rem;
+}
+.button {
+    background: #0077ff;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+	margin-top: 1rem;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover {
+    background: #014a9c;
+}
+.arrow {
+    margin-left: 10px;
+}
+.start{
+	margin-top: 1rem;
+	width: 270px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #323232;
+	border: none;
+}
+.start1{
+	margin-top: 1rem;
+	width: 270px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #323232;
+	border: none;
+}
+.mstart{
+	margin-top: 1rem;
+	width: 270px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #323232;
+	border: none;
+	justify-content: center;
+	align-items: center;
+}
+.time{
+	margin-top: 1rem;
+	width: 270px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #323232;
+	border: none;
+
+}
+.closeButton {
+    position: absolute;
+    right: 3px;
+    top: 8px;
+    background: #323232;
+}

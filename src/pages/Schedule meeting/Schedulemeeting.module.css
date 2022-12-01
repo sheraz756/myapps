@@ -1,0 +1,18 @@
+.text{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    border-radius: 10px;
+    border: none;
+}
+.set{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}

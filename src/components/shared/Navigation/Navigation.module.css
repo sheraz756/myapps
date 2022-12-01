@@ -1,0 +1,126 @@
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height:50px;
+    width: 100px;
+    border-radius: 50%;
+}
+.abc:hover{
+    text-decoration: none;
+}
+
+.logoutButton {
+    background: none;
+    cursor: pointer;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0077ff;
+    margin: 0 20px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.chk{
+    height:120px;
+    width: 70px;
+    border-radius: 50%;
+}
+.box{
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.7);
+    width: 300px;
+    right: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+
+
+}
+.abc:hover .box{
+    display: block;
+}
+.box{
+    display: none;
+}
+.box h3{
+    color: #fff;
+}
+.box button {
+    font-size: 15px;
+    background: none;
+    padding: 2px;
+}
+.box button:hover
+{
+    border-radius:10px;
+    padding: 10px 18px;
+}
+.abc .box button img{
+    width: 20px;
+}
+.abc div img{
+    width: 120px;
+
+
+}
+.logout{
+    display: none;
+}
+.one{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+}
+
+ .left{
+    width: 150px;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+} 
+.right{
+    width: 150px;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+} 
+.logoText{
+    cursor: pointer;
+}
+.logo{
+    cursor: pointer;
+}
+@media screen and (max-width: 600px){
+.logoText{
+    display: none;
+}
+.logo{
+    height: 70px;
+    width: 70px;
+}
+.logoutButton{
+    display: none;
+}
+.user{
+    display: none;
+}
+.abc:hover .logout{
+    display: block;
+    color: #fff;
+}
+}

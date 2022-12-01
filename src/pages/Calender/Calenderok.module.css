@@ -1,0 +1,94 @@
+.App{
+	margin-left: 1rem;
+}
+.button {
+    background: #0077ff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+	margin-top: 1rem;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+	height: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.logoutButton{
+    background-color: #121212;
+}
+.button1 {
+    background: #0077ff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    /* margin: 0 auto; */
+	/* margin-top: 1rem; */
+    color: #fff;
+    /* font-size: 18px; */
+    font-weight: bold;
+    border-radius: 50px;
+	height: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+	font-size: 50px;
+	border-radius: 50%;
+}
+.button1:hover {
+    background: #014a9c;
+}
+.arrow {
+    margin-left: 10px;
+}
+.start{
+	margin-top: 1rem;
+	width: 270px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #323232;
+	border: none;
+	color: #fff;
+}
+.mstart{
+	margin-top: 1rem;
+	width: 270px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #323232;
+	border: none;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+.time{
+	margin-top: 1rem;
+	width: 270px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #323232;
+	border: none;
+
+}
+
+.set{
+	color: #0077ff;
+}
+.cover{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.closeButton {
+ position: relative;
+ left: 200px;
+ top: -50px;
+ background-color: #0077ff;
+}
