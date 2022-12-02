@@ -10,7 +10,12 @@
     align-items: center;
     justify-content: flex-end;
 }
-
+.cardWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+  }
 .tabButton {
     width: 60px;
     height: 60px;

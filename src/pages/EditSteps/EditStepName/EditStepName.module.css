@@ -3,3 +3,14 @@
     text-align: center;
     margin: 20px auto;
 }
+.cardWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0rem;
+  }
+  .logoutButton {
+    background: none;
+    cursor: pointer;
+    padding-left: 180px;
+}

@@ -36,7 +36,7 @@ const Room = () => {
     };
     const btn1 = () => {
         // const windowFeatures = "left=100,top=100,width=320,height=320";
-        const handle = window.open("https://chat.anonytesting.com", "_self");
+        const handle = window.open("https://chatting.anonytesting.com", "_self");
     }
 
     const handleMuteClick = (clientId) => {

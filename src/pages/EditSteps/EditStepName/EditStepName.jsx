@@ -2,27 +2,13 @@ import React, { useState } from 'react';
 import Card from '../../../components/shared/Card/Card';
 import Button from '../../../components/shared/Button/Button';
 import TextInput from '../../../components/shared/TextInput/TextInput';
-// import { Link, useHistory } from 'react-router-dom';
-// import { useDispatch } from 'react-redux';
-// import { setName } from '../../../store/activateSlice';
-// import {setEmail} from '../../../store/activateSlice';
-// import {setDOB} from '../../../store/activateSlice';
-// import {setJobTitle} from '../../../store/activateSlice';
-// import {setDepartment} from '../../../store/activateSlice';
-// import {setOrganizaion} from '../../../store/activateSlice';
-// import {setCountry} from '../../../store/activateSlice';
+import { Link, useHistory } from 'react-router-dom';
 import { edituser } from '../../../http';
 import styles from './EditStepName.module.css';
 // import axios from 'axios'
 import {  useParams } from 'react-router-dom';
 const EditStepName = ({ onNext }) => {
-    // const { name } = useSelector((state) => state.activate);
-    // const { email } = useSelector((state) => state.activate);
-    // const { dob } = useSelector((state) => state.activate);
-    // const { jobtitle } = useSelector((state) => state.activate);
-    // const { department } = useSelector((state) => state.activate);
-    // const { organization } = useSelector((state) => state.activate);
-    // const { country } = useSelector((state) => state.activate);
+
     const { id } = useParams();
     const initialValue = {
         fullname: '',
@@ -33,12 +19,9 @@ const EditStepName = ({ onNext }) => {
         org: '',
         country: ''
     }
-    // const history = useHistory();
+    const history = useHistory();
     const [data, setdata] = useState(initialValue);
-    // const [fullname, mail,dob1,jobtitle1,depart,org,count]
-    // const { name, email, dob,jobtitle,department,organization,country } = data;
-    // const { name, email, dob, phone } = user;
-    // const dispatch = useDispatch();
+    
     const [name, setname] = useState();
     const [email, setemail] = useState();
     const [dob, setdob] = useState();
@@ -52,14 +35,23 @@ const EditStepName = ({ onNext }) => {
             const { data } = await edituser({ name, email,dob,jobtitle,department,organization,country},id);
            
             console.log(data)
+            
             alert("record updated sucessfully")
-            window.location.reload(true);
+            history.push("/rooms")
         } catch (err) {
             console.log(err.message);
         }
     }
+    
+        // history.back()
+    
     return (
         <>
+            <button className={styles.logoutButton} onClick={() => history.goBack()}>
+            <img src="/images/logout1.png" alt="logout" />
+            
+          </button>
+        <div className={styles.cardWrapper}>
             <Card title="Update Your Profile:" icon="goggle-emoji">
            
                 <TextInput
@@ -106,6 +98,7 @@ const EditStepName = ({ onNext }) => {
                 </div>
         
             </Card>
+            </div>
         </>
     );
 };

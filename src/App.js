@@ -40,9 +40,7 @@ function App() {
         <BrowserRouter>
             <Navigation />
             <Switch>
-            <GuestRoute path="/admin" exact>
-                    <Admin />
-                </GuestRoute>
+           
                 {/* <GuestRoute path="/message" exact>
                     <Message />
                 </GuestRoute> */}
@@ -84,6 +82,7 @@ function App() {
                 <ProtectedRoute1 path="/hostroom/:id">
                     <HostRoom />
                 </ProtectedRoute1>
+                
                 <GuestRoute2 path="/Admin" exact>
                     <Admin />
                 </GuestRoute2>

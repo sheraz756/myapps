@@ -31,6 +31,7 @@ const Rooms = () => {
     //   }
     function sayHi() {
         alert('Upgrade Your Plan, and start hosting meetings anonymously');
+        // window.location.reload(true);
       }
       
       setTimeout(sayHi, 5000);

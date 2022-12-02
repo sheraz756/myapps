@@ -10,7 +10,7 @@ import { getAllEdit } from '../../../http'
 import DropDown from '../Drop/DropDown';
 
 
-const Navigation = ({onClose}) => {
+const Navigation = ({onClose,onClick}) => {
   const [showModal, setShowModal] = useState(false);
   // const [HideModal, setHideModal] = useState(true);
   const [rooms, setRooms] = useState([]);
@@ -32,8 +32,8 @@ const Navigation = ({onClose}) => {
         document.getElementById("ok4").innerHTML=JSON.stringify(data[0].Organization)
         document.getElementById("ok5").innerHTML=JSON.stringify(data[0].Email)
         document.getElementById("ok6").innerHTML=JSON.stringify(data[0].location)
-        setRooms(data);
-        console.log(data)
+        // setRooms(data);
+        // console.log(data)
     };
     fetchRooms();
 }, []);
@@ -76,12 +76,13 @@ const Navigation = ({onClose}) => {
       {isAuth && (
       
         <div className={styles.navRight}>
-          <h3 className={styles.user}onClick={onClose}>{user?.name}</h3>
-          <div  className={styles.abc}  >
+          <h3 className={styles.user}onClick={onClose} >{user?.name}</h3>
+          <div  className={styles.abc} onClick={onClose} >
             <img
             
               className={styles.avatar}
               onClick={()=>{ openModal()}}
+              // onClose={onClose}
               src={
                 
                 user?.avatar
